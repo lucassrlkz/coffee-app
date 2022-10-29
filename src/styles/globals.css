@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+--dark-zinc: "#18181B";
+
+* {
+	border: 0px;
+	box-shadow: 0px;
+	padding: 0px;
+	margin: 0px;
+	border-box: 0px;
+	fontfamily: "Poppins", "sans-serif";
+	fontsize: 16px;
+}
