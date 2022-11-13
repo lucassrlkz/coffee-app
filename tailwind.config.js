@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	darkMode: ["class", '[data-mode="dark"]'],
+	darkMode: ["class"],
 	content: ["./src/**/*.{ts,tsx}", "/src/pages/**/*.tsx"],
 	theme: {
 		colors: {
@@ -10,7 +10,7 @@ module.exports = {
 			beige: "#FFFDED",
 			gray: {
 				100: "#EBEBEB",
-				400: "#B4B4B4",
+				200: "#B4B4B4",
 				500: "#2F2E2E",
 			},
 			brown: {
@@ -22,7 +22,7 @@ module.exports = {
 				zinc: "#18181B",
 			},
 		},
-		fontFamily: {},
+		fontFamily: ["Poppins", "sans-serif"],
 		extend: {},
 	},
 	plugins: [],
