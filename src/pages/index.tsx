@@ -3,15 +3,16 @@ import dynamic from 'next/dynamic'
 import { MagnifyingGlass, Circle } from 'phosphor-react'
 import { Input } from '../components/input/'
 
-const Switch = dynamic(() => import('../components/switch/switch'), {
-	ssr: false,
-})
+import { Switch } from '../components/switch/Switch'
+// const Switch = dynamic(() => import('../components/switch/Switch'), {
+// 	ssr: false,
+// })
 
 export default function Home() {
 	const { theme, setTheme } = useTheme()
 
 	return (
-		<div className='flex flex-col h-screen w-screen dark:text-white dark:bg-dark-zinc'>
+		<div className='flex flex-col'>
 			<span className='flex justify-center'>
 				<Switch
 					onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
