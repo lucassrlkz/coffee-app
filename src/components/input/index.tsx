@@ -1,10 +1,19 @@
 import React from 'react'
 import { Slot } from '@radix-ui/react-slot'
-import {
-	InputIconProps,
-	InputRootProps,
-	InputInputProps,
-} from '../../interfaces/interfaceInput'
+import { InputHTMLAttributes, ReactNode } from 'react'
+
+// interfaces
+export interface InputRootProps {
+	children: ReactNode
+}
+
+export interface InputIconProps extends React.HTMLProps<HTMLInputElement> {
+	children: ReactNode
+}
+
+export interface InputInputProps
+	extends InputHTMLAttributes<HTMLInputElement> {}
+//interfaces
 
 export function InputRoot(props: InputRootProps) {
 	return (
