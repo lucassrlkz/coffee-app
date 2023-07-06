@@ -4,7 +4,7 @@ export interface ISwitchProps extends React.HTMLAttributes<HTMLInputElement> {
 	onClick: (event: any) => void
 }
 
-export function Switch({ onClick }: ISwitchProps) {
+export function Switch({ onClick }: ISwitchProps): JSX.Element {
 	return (
 		<label
 			htmlFor='default-toggle'

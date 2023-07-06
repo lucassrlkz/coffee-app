@@ -15,7 +15,7 @@ export interface InputInputProps
 	extends InputHTMLAttributes<HTMLInputElement> {}
 //interfaces
 
-export function InputRoot(props: InputRootProps) {
+export function InputRoot(props: InputRootProps): JSX.Element {
 	return (
 		<div className='w-[328px] flex flex-row shadow bg-white items-center justify-between outline-none h-auto rounded rounded-r-md'>
 			{props.children}

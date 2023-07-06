@@ -42,11 +42,19 @@ export default function Home() {
 				</div>
 			</div>
 
-			<main className='grid grid-cols-2'>
+			<main className='grid grid-cols-5 '>
 				<div className='flex relative justify-center items-center '>
 					<Card
 						title='Cappucino'
 						type='espresso'
+						onClick={about}
+						link='https://picsum.photos/200/300/?blur=2'
+					/>
+				</div>
+				<div className='flex relative justify-center items-center '>
+					<Card
+						title='Cappucino 2'
+						type='espresso 2'
 						onClick={about}
 						link='https://picsum.photos/200/300/?blur=2'
 					/>
